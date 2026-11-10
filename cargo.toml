@@ -1,0 +1,23 @@
+[dependencies]
+thiserror    = "1"
+parking_lot  = "0.12"
+rustc-hash   = "2"
+rand         = "0.8"
+rand_distr   = "0.4"
+smallvec     = { version = "1", features = ["serde"] }
+serde        = { version = "1", features = ["derive"] }
+serde_json   = "1"
+bincode      = "1"
+tracing      = "0.1"
+hnsw_rs      = "0.3"
+rayon        = "1"
+arc-swap     = "1"
+dashmap      = "6"
+
+[dev-dependencies]
+criterion    = "0.5"
+tempfile     = "3"
+
+[[bench]]
+name    = "wave_bench"
+harness = false
